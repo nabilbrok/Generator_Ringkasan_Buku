@@ -23,7 +23,7 @@ import os
 from datetime import datetime
 
 # Fungsi untuk mengambil data buku dari Google Books API
-def get_books_data(query, file_name, max_results=5, lang='id', total_pages=1):
+def get_books_data(query, file_name, max_results=5, lang='en', total_pages=1):
     url_template = f"https://www.googleapis.com/books/v1/volumes?q={query}&langRestrict={lang}&maxResults={max_results}&startIndex={{}}"
     
     with open(file_name, 'w', encoding='utf-8') as file:
@@ -76,11 +76,11 @@ nama_file = f"{folder}/{buku_apa}_{timestamp}.txt"
 # Mengambil data buku fiksi berbahasa Indonesia
 if buku_apa.lower() == "fiksi":
     print("Buku Fiksi:")
-    get_books_data("fiction", nama_file, max_results=5, lang='id', total_pages=jumlah_halaman)
+    get_books_data("fiction", nama_file, max_results=5, lang='en', total_pages=jumlah_halaman)
 
 # Mengambil data buku non-fiksi berbahasa Indonesia
 elif buku_apa.lower() == "nonfiksi":
     print("Buku Non-Fiksi:")
-    get_books_data("non-fiction", nama_file, max_results=5, lang='id', total_pages=jumlah_halaman)
+    get_books_data("non-fiction", nama_file, max_results=5, lang='en', total_pages=jumlah_halaman)
 
 keluar = input("Tekan 'Enter' untuk keluar...")
