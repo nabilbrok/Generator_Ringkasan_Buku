@@ -14,6 +14,7 @@ Nama saya Nabil, saya adalah seorang siswa di salah satu sekolah di Indragiri Hi
 
  - [Chat GPT](https://chatgpt.com/)
  - [Visual Studio Code](https://code.visualstudio.com/)
+ - [Google Books API](https://developers.google.com/books/docs/v1/using)
 
 ## Cara Penggunaan Skrip
 
